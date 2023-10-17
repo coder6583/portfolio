@@ -14,10 +14,11 @@
 }
 
 .nameText {
-  flex: 3;
+  flex: 3.5;
   display: flex;
   flex-direction: column;
-  font-size: 48px;
+  font-size: 54px;
+  font-weight: 400;
   color: var(--blue);
 }
 

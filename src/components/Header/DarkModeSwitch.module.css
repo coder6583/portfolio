@@ -1,0 +1,79 @@
+.buttonParent {
+  height: 40px;
+  padding-top: 8px;
+  margin-right: 16px;
+  z-index: 100;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  width: 48px;
+  height: 32px;
+  border-radius: 16px;
+  border: 0;
+  padding: 3px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.lightButton {
+  background-color: var(--very-light-gray);
+}
+
+.darkButton {
+  background-color: var(--blue);
+}
+
+.space {
+  width: 16px;
+}
+
+.notch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 18px;
+}
+
+.none {
+  display: none;
+}
+
+.lightNotch {
+  background-color: var(--gray);
+  transition: 0.25s;
+}
+
+.button:hover .lightNotch {
+  background-color: var(--blue);
+}
+
+.darkNotch {
+  background-color: var(--very-light-gray);
+  transition: 0.25s;
+}
+
+.button:hover .darkNotch {
+  background-color: var(--blue);
+}
+
+.moonIcon {
+  padding-top: 4px;
+  font-size: 14px;
+  color: var(--white);
+}
+
+.sunIcon {
+  padding-top: 3px;
+  padding-left: 1px;
+  color: var(--blue);
+}
+
+.button:hover .sunIcon {
+  color: var(--white);
+}
