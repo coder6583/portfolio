@@ -1,0 +1,24 @@
+.parent {
+  display: flex;
+  flex-direction: row;
+  line-height: 1;
+}
+
+.text {
+  width: min-content;
+  white-space: nowrap;
+}
+
+.cursor {
+  animation: 0;
+}
+
+.cursor[data-blink="1"] {
+  animation: cursor-blink 0.8s steps(2, start) infinite;
+}
+
+@keyframes cursor-blink {
+  to {
+    visibility: hidden;
+  }
+}
