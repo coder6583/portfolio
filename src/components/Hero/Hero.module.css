@@ -51,14 +51,14 @@
 }
 
 .scrollDownArrow {
-  color: var(--very-light-blue);
+  color: var(--very-light-gray);
   text-align: center;
   font-size: 84px;
   animation: fadeinquick 6s;
 }
 
 .bottomScrollDownArrow {
-  color: var(--very-light-blue);
+  color: var(--very-light-gray);
   text-align: center;
   font-size: 84px;
   margin-top: -90px;

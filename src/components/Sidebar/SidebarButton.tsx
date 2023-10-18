@@ -25,6 +25,13 @@ export default function SidebarButton({
     >
       <div
         className={clsx(
+          styles.prefix,
+          pageId === id && styles.dot,
+          pageId !== id && styles.bar
+        )}
+      />
+      <div
+        className={clsx(
           styles.animate,
           pageId === id ? styles.selectedButtonText : styles.buttonText
         )}
