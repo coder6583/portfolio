@@ -2,10 +2,11 @@ import { useState } from "react";
 import styles from "./DarkModeSwitch.module.css";
 import { BsMoonFill, BsSunFill } from "react-icons/bs";
 import clsx from "clsx";
+import { useLightDarkContext } from "@/pages";
 
 export default function DarkModeSwitch(): JSX.Element {
   // true for light, false for dark
-  const [lightDark, setLightDark] = useState(true);
+  const { lightDark, setLightDark } = useLightDarkContext();
   return (
     <div className={styles.buttonParent}>
       <button
@@ -20,9 +21,6 @@ export default function DarkModeSwitch(): JSX.Element {
         }}
       >
         <div
-          className={clsx(lightDark && styles.none, !lightDark && styles.space)}
-        />
-        <div
           className={clsx(
             styles.notch,
             lightDark && styles.lightNotch,
@@ -31,16 +29,18 @@ export default function DarkModeSwitch(): JSX.Element {
         >
           <div
             className={clsx(
+              styles.icon,
               !lightDark && styles.sunIcon,
-              lightDark && styles.none
+              lightDark && styles.sunIconRotated
             )}
           >
             <BsSunFill />
           </div>
           <div
             className={clsx(
+              styles.icon,
               lightDark && styles.moonIcon,
-              !lightDark && styles.none
+              !lightDark && styles.moonIconRotated
             )}
           >
             <BsMoonFill />

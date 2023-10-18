@@ -13,6 +13,7 @@
   border-radius: 16px;
   border: 0;
   padding: 3px;
+  transition: 0.25s;
 }
 
 .button:hover {
@@ -27,8 +28,8 @@
   background-color: var(--blue);
 }
 
-.space {
-  width: 16px;
+.darkButton:hover {
+  background-color: var(--very-light-gray);
 }
 
 .notch {
@@ -47,6 +48,7 @@
 .lightNotch {
   background-color: var(--gray);
   transition: 0.25s;
+  margin-left: 0px;
 }
 
 .button:hover .lightNotch {
@@ -56,22 +58,43 @@
 .darkNotch {
   background-color: var(--very-light-gray);
   transition: 0.25s;
+  margin-left: 16px;
 }
 
 .button:hover .darkNotch {
   background-color: var(--blue);
 }
 
+.icon {
+  transition: 0.25s;
+}
+
 .moonIcon {
   padding-top: 4px;
   font-size: 14px;
   color: var(--white);
+  opacity: 100;
+}
+
+.moonIconRotated {
+  transform: rotate(-90deg);
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
 }
 
 .sunIcon {
   padding-top: 3px;
   padding-left: 1px;
   color: var(--blue);
+  opacity: 100;
+}
+
+.sunIconRotated {
+  transform: rotate(90deg);
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
 }
 
 .button:hover .sunIcon {
