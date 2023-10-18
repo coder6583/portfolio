@@ -66,7 +66,10 @@ export default function Typewriter({
     typing,
   ]);
   return (
-    <div className={styles.parent} style={{ justifyContent: align }}>
+    <div
+      className={styles.parent}
+      style={{ justifyContent: align, color, fontSize }}
+    >
       <div
         className={styles.text}
         style={{

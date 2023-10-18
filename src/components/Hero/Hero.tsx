@@ -1,3 +1,4 @@
+import { BsChevronCompactDown } from "react-icons/bs";
 import Typewriter from "../Typewriter/Typewriter";
 import styles from "./Hero.module.css";
 import ResumeDownload from "./ResumeDownload";
@@ -35,7 +36,14 @@ export default function Hero(): JSX.Element {
         <div className={styles.resumeDownload}>
           <ResumeDownload />
         </div>
-        <div style={{ flex: 1.5 }} />
+        <div className={styles.scrollDown}>
+          <div className={styles.scrollDownArrow}>
+            <BsChevronCompactDown />
+          </div>
+          <div className={styles.bottomScrollDownArrow}>
+            <BsChevronCompactDown />
+          </div>
+        </div>
       </div>
     </div>
   );

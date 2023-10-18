@@ -1,4 +1,5 @@
 .parent {
+  position: fixed;
   display: flex;
   height: 40px;
   width: 100%;
