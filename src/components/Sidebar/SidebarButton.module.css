@@ -25,11 +25,34 @@
   border-left: 4px solid var(--blue);
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
-  padding-left: 16px;
+  padding-left: 32px;
   color: var(--blue);
 }
 
 .buttonText:active {
   border-left-color: var(--dark-blue);
   color: var(--dark-blue);
+}
+
+.selectedButton {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: var(--white);
+  padding-bottom: 12px;
+  font-family: "Consolas";
+}
+
+.selectedButtonText {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.animate {
+  transition: 0.25s;
 }

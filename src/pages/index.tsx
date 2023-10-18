@@ -12,9 +12,12 @@ import React, {
 } from "react";
 
 export type PageType = "home" | "works" | "profile";
+export const checkPageType = (x: string): x is PageType => {
+  return x === "home" || x === "works" || x === "profile";
+};
 export type PageContextType = {
-  id: PageType;
-  setId: Dispatch<SetStateAction<PageType>>;
+  pageId: PageType;
+  setPageId: Dispatch<SetStateAction<PageType>>;
 };
 export const pageContext = createContext<PageContextType | undefined>(
   undefined
@@ -48,7 +51,7 @@ export default function Home() {
 
   return (
     <>
-      <pageContext.Provider value={{ id: page, setId: setPage }}>
+      <pageContext.Provider value={{ pageId: page, setPageId: setPage }}>
         <lightDarkContext.Provider value={{ lightDark, setLightDark }}>
           <Head>
             <title>Soma Narita Portfolio</title>
