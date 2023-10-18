@@ -9,7 +9,7 @@ export default function Hero(): JSX.Element {
           <div style={{ flex: 1 }} />
           SOMA NARITA
         </div>
-        <div className={styles.subtitleText}>DEVELOPER</div>
+        <div className={styles.subtitleText}>HARDWARE/SOFTWARE DEVELOPER</div>
         <div style={{ flex: 0.5 }} />
         <div className={styles.resumeDownload}>
           <ResumeDownload />

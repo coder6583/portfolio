@@ -25,7 +25,8 @@
   border-left: 4px solid var(--blue);
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
-  padding-left: 32px;
+  padding-left: 16px;
+  font-weight: 600;
   color: var(--blue);
 }
 

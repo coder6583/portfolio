@@ -65,7 +65,9 @@ export default function Home() {
           <Header />
           <main className={`${styles.main}`}>
             <Sidebar />
-            <Hero />
+            <div className={styles.content}>
+              <Hero />
+            </div>
           </main>
         </lightDarkContext.Provider>
       </pageContext.Provider>
