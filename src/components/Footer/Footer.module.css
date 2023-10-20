@@ -1,0 +1,17 @@
+.parent {
+  position: relative;
+  display: flex;
+  height: 20px;
+  margin-top: -20px;
+  padding-left: 24px;
+  background-color: var(--very-light-gray);
+  z-index: 100;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-family: "Consolas", Arial;
+  color: var(--gray);
+}

@@ -12,6 +12,7 @@ import React, {
 } from "react";
 import Works from "@/components/Works/Works";
 import Profile from "@/components/Profile/Profile";
+import Footer from "@/components/Footer/Footer";
 
 export type PageType = "home" | "works" | "profile";
 export const checkPageType = (x: string): x is PageType => {
@@ -73,6 +74,7 @@ export default function Home() {
               <Profile />
             </div>
           </main>
+          <Footer />
         </lightDarkContext.Provider>
       </pageContext.Provider>
     </>
