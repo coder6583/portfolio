@@ -3,7 +3,7 @@
   width: 100%;
   border: 0;
   outline: 0;
-  background-color: var(--white);
+  background-color: #0000;
   padding-bottom: 12px;
   font-family: "Consolas";
 }
@@ -68,7 +68,7 @@
   width: 100%;
   border: 0;
   outline: 0;
-  background-color: var(--white);
+  background-color: #0000;
   padding-bottom: 12px;
   font-family: "Consolas";
 }

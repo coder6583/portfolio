@@ -1,0 +1,14 @@
+.image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: calc(16 / 9);
+  background-color: var(--blue);
+}
+
+.image:hover {
+  cursor: pointer;
+}
+
+.caption {
+  margin-top: 4px;
+}
