@@ -11,6 +11,7 @@ import React, {
   useState,
 } from "react";
 import Works from "@/components/Works/Works";
+import Profile from "@/components/Profile/Profile";
 
 export type PageType = "home" | "works" | "profile";
 export const checkPageType = (x: string): x is PageType => {
@@ -69,6 +70,7 @@ export default function Home() {
             <div className={styles.content}>
               <Hero />
               <Works />
+              <Profile />
             </div>
           </main>
         </lightDarkContext.Provider>

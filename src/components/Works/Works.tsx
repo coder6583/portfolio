@@ -26,9 +26,10 @@ export default function Works(): JSX.Element {
           </div>
           <div className={styles.child}>
             <ImageItem id="laze" />
+            <div />
           </div>
-        </div>
-        <div className={styles.row}>
+        </div> */}
+        {/* <div className={styles.row}>
           <div className={styles.child}>
             <ImageItem id="laze" />
           </div>
