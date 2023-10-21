@@ -25,6 +25,11 @@ export const works: {
       subtitle: "OpenGL描画3Dエンジン",
       thumbnail: "/images/engine3D.png",
     },
+    textEditor: {
+      name: "Axis Editor",
+      subtitle: "Axisテキストエディター",
+      thumbnail: "/images/axis-editor.png",
+    },
   },
   en: {
     laze: {
@@ -41,6 +46,11 @@ export const works: {
       name: "OpenGL-based 3D Engine",
       subtitle: "",
       thumbnail: "/images/engine3D.png",
+    },
+    textEditor: {
+      name: "Axis Editor",
+      subtitle: "",
+      thumbnail: "/images/axis-editor.png",
     },
   },
 };

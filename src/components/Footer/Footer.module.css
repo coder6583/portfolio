@@ -1,9 +1,10 @@
 .parent {
   position: relative;
   display: flex;
+  justify-content: right;
   height: 20px;
   margin-top: -20px;
-  padding-left: 24px;
+  padding-right: 24px;
   background-color: var(--very-light-gray);
   z-index: 100;
 }

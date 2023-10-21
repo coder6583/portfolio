@@ -17,18 +17,18 @@ export default function Works(): JSX.Element {
             <ImageItem id="engine3D" />
           </div>
         </div>
-        {/* <div className={styles.row}>
+        <div className={styles.row}>
           <div className={styles.child}>
-            <ImageItem id="laze" />
+            <ImageItem id="textEditor" />
           </div>
-          <div className={styles.child}>
+          {/* <div className={styles.child}>
             <ImageItem id="laze" />
           </div>
           <div className={styles.child}>
             <ImageItem id="laze" />
             <div />
-          </div>
-        </div> */}
+          </div> */}
+        </div>
         {/* <div className={styles.row}>
           <div className={styles.child}>
             <ImageItem id="laze" />
