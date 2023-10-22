@@ -127,10 +127,9 @@
 
 .carousel {
   position: relative;
-  width: 70%;
+  width: 75%;
   aspect-ratio: 3 / 2;
-  margin-right: 25%;
-  margin-left: 5%;
+  margin-right: auto;
   margin-bottom: 32px;
   overflow: hidden;
   animation: carouselslidein 0.75s;

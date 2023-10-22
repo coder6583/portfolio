@@ -13,6 +13,7 @@ import React, {
 import Works from "@/components/Works/Works";
 import Profile from "@/components/Profile/Profile";
 import Footer from "@/components/Footer/Footer";
+import About from "@/components/About/About";
 
 export type PageType = "home" | "works" | "profile";
 export const checkPageType = (x: string): x is PageType => {
@@ -72,6 +73,7 @@ export default function Home() {
               <Hero />
               <Works />
               <Profile />
+              <About />
             </div>
           </main>
           <Footer />
