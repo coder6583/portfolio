@@ -34,22 +34,22 @@ export const works: {
   en: {
     laze: {
       name: "Laze Language",
-      subtitle: "",
+      subtitle: "Programming language with multilingual support",
       thumbnail: "/images/laze.png",
     },
     charEngine3D: {
       name: "Character-based 3D Engine",
-      subtitle: "",
+      subtitle: "3D Engine rendered with Japanese Kanji Characters",
       thumbnail: "/images/charEngine3D.png",
     },
     engine3D: {
       name: "OpenGL-based 3D Engine",
-      subtitle: "",
+      subtitle: "3D Engine using OpenGL and ImGui",
       thumbnail: "/images/engine3D.png",
     },
     textEditor: {
       name: "Axis Editor",
-      subtitle: "",
+      subtitle: "Basic text editor with syntax highlighting",
       thumbnail: "/images/axis-editor.png",
     },
   },
