@@ -3,28 +3,10 @@ import Typewriter from "../Typewriter/Typewriter";
 import ImageItem from "./ImageItem";
 import styles from "./Works.module.css";
 import clsx from "clsx";
+import useFirstAppear from "@/features/hooks/useFirstAppear";
 
 export default function Works(): JSX.Element {
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const [firstAppear, setFirstAppear] = useState(false);
-  const handleScroll = () => {
-    const position = window.pageYOffset;
-    setScrollPosition(position);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (!firstAppear && scrollPosition > (window.innerHeight * 1) / 2) {
-      setFirstAppear(true);
-    }
-  }, [firstAppear, scrollPosition]);
+  const firstAppear = useFirstAppear(1 / 2);
   return (
     <div className={styles.parent}>
       {firstAppear && (

@@ -1,28 +1,9 @@
 import Image from "next/image";
 import styles from "./Profile.module.css";
-import { useEffect, useState } from "react";
+import useFirstAppear from "@/features/hooks/useFirstAppear";
 
 export default function Profile(): JSX.Element {
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const [firstAppear, setFirstAppear] = useState(false);
-  const handleScroll = () => {
-    const position = window.pageYOffset;
-    setScrollPosition(position);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (!firstAppear && scrollPosition > (window.innerHeight * 5) / 4) {
-      setFirstAppear(true);
-    }
-  }, [firstAppear, scrollPosition]);
+  const firstAppear = useFirstAppear(5 / 4);
   return (
     <div className={styles.parent}>
       {firstAppear && (
