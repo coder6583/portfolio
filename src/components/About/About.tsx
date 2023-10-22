@@ -41,7 +41,7 @@ export default function About(): JSX.Element {
               <br />
               Currently, I&apos;m focused on innovating programming education,
               and making programming accessible to everyone regardless of
-              wealth, experience, and native language.
+              wealth, education, and native language.
             </div>
             <div className={styles.contact}>EMAIL: snarita@andrew.cmu.edu</div>
           </div>
