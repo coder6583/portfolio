@@ -19,46 +19,44 @@ export default function Profile(): JSX.Element {
   }, []);
 
   useEffect(() => {
-    if (!firstAppear && scrollPosition > (window.innerHeight * 4) / 3) {
+    if (!firstAppear && scrollPosition > (window.innerHeight * 5) / 4) {
       setFirstAppear(true);
     }
   }, [firstAppear, scrollPosition]);
   return (
     <div className={styles.parent}>
-      <div className={styles.left}>
-        {firstAppear && (
-          <div className={styles.carousel}>
-            <div className={styles.slideshow}>
-              <div className={styles.image}>
-                <Image
-                  alt="profile"
-                  src="/images/woodworking.jpg"
-                  fill={true}
-                />
-              </div>
-              <div className={styles.image}>
-                <Image alt="profile" src="/images/globe3.jpg" fill={true} />
-              </div>
-              <div className={styles.image}>
-                <Image alt="profile" src="/images/bigrobot.jpg" fill={true} />
-              </div>
-              <div className={styles.image}>
-                <Image alt="profile" src="/images/robot.jpg" fill={true} />
-              </div>
-              <div className={styles.image}>
-                <Image
-                  alt="profile"
-                  src="/images/small_robot.png"
-                  fill={true}
-                />
+      {firstAppear && (
+        <div className={styles.animation}>
+          <div className={styles.left}>
+            <div className={styles.carousel}>
+              <div className={styles.slideshow}>
+                <div className={styles.image}>
+                  <Image
+                    alt="profile"
+                    src="/images/woodworking.jpg"
+                    fill={true}
+                  />
+                </div>
+                <div className={styles.image}>
+                  <Image alt="profile" src="/images/globe3.jpg" fill={true} />
+                </div>
+                <div className={styles.image}>
+                  <Image alt="profile" src="/images/bigrobot.jpg" fill={true} />
+                </div>
+                <div className={styles.image}>
+                  <Image alt="profile" src="/images/robot.jpg" fill={true} />
+                </div>
+                <div className={styles.image}>
+                  <Image
+                    alt="profile"
+                    src="/images/small_robot.png"
+                    fill={true}
+                  />
+                </div>
               </div>
             </div>
           </div>
-        )}
-      </div>
-      <div className={styles.right}>
-        {firstAppear && (
-          <>
+          <div className={styles.right}>
             <div className={styles.fullGap} />
             <div className={styles.profileParagraph}>
               All my life, I have been a passionate maker, creating whatever my
@@ -116,9 +114,9 @@ export default function Profile(): JSX.Element {
               </div>
             </div>
             <div className={styles.fullGap} />
-          </>
-        )}
-      </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
