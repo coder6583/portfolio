@@ -1,0 +1,36 @@
+.dot {
+  width: 24px;
+  height: 24px;
+  background-color: var(--white);
+  border: 6px solid var(--blue);
+  border-radius: 12px;
+}
+
+.careerItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.careerItemGap {
+  width: 24px;
+  background-color: #0000;
+}
+
+.careerItemText {
+  color: var(--very-dark-gray);
+}
+
+.fullGap {
+  flex: 1;
+}
+
+.graydot {
+  width: 18px;
+  height: 18px;
+  background-color: var(--white);
+  border: 4px solid var(--light-gray);
+  border-radius: 12px;
+  margin-right: 5px;
+  margin-left: 3px;
+}

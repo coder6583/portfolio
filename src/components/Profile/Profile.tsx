@@ -1,6 +1,8 @@
-import Image from "next/image";
 import styles from "./Profile.module.css";
 import useFirstAppear from "@/features/hooks/useFirstAppear";
+import Carousel from "./Carousel";
+import CareerItem from "./CareerItem";
+import LineItem from "./LineItem";
 
 export default function Profile(): JSX.Element {
   const firstAppear = useFirstAppear(5 / 4);
@@ -9,33 +11,7 @@ export default function Profile(): JSX.Element {
       {firstAppear && (
         <div className={styles.animation}>
           <div className={styles.left}>
-            <div className={styles.carousel}>
-              <div className={styles.slideshow}>
-                <div className={styles.image}>
-                  <Image
-                    alt="profile"
-                    src="/images/woodworking.jpg"
-                    fill={true}
-                  />
-                </div>
-                <div className={styles.image}>
-                  <Image alt="profile" src="/images/globe3.jpg" fill={true} />
-                </div>
-                <div className={styles.image}>
-                  <Image alt="profile" src="/images/bigrobot.jpg" fill={true} />
-                </div>
-                <div className={styles.image}>
-                  <Image alt="profile" src="/images/robot.jpg" fill={true} />
-                </div>
-                <div className={styles.image}>
-                  <Image
-                    alt="profile"
-                    src="/images/small_robot.png"
-                    fill={true}
-                  />
-                </div>
-              </div>
-            </div>
+            <Carousel />
           </div>
           <div className={styles.right}>
             <div className={styles.fullGap} />
@@ -51,48 +27,13 @@ export default function Profile(): JSX.Element {
             </div>
             <div className={styles.gap} />
             <div className={styles.career}>
-              <div className={styles.careerItem}>
-                <div className={styles.dot} />
-                <div className={styles.careerItemGap} />
-                <div className={styles.careerItemText}>Birth</div>
-                <div className={styles.fullGap} />
-              </div>
-              <div className={styles.lineItem}>
-                <div className={styles.line} />
-                <div className={styles.careerItemGap} />
-                <div className={styles.date}>02/04/05</div>
-              </div>
-              <div className={styles.careerItem}>
-                <div className={styles.dot} />
-                <div className={styles.careerItemGap} />
-                <div className={styles.careerItemText}>
-                  Shibuya Makuhari High School
-                </div>
-                <div className={styles.fullGap} />
-              </div>
-              <div className={styles.lineItem}>
-                <div className={styles.line} />
-                <div className={styles.careerItemGap} />
-                <div className={styles.date}>04/17 - 03/23</div>
-              </div>
-              <div className={styles.careerItem}>
-                <div className={styles.dot} />
-                <div className={styles.careerItemGap} />
-                <div className={styles.careerItemText}>
-                  Carnegie Mellon University
-                </div>
-                <div className={styles.fullGap} />
-              </div>
-              <div className={styles.lineItem}>
-                <div className={styles.grayline} />
-                <div className={styles.careerItemGap} />
-                <div className={styles.date}>09/23 - Present</div>
-              </div>
-              <div className={styles.careerItem}>
-                <div className={styles.graydot} />
-                <div className={styles.careerItemGap} />
-                <div className={styles.careerItemText}>???</div>
-              </div>
+              <CareerItem text="Birth" />
+              <LineItem text="02/04/05" />
+              <CareerItem text="Shibuya Makuhari High School" />
+              <LineItem text="04/17 - 03/23" />
+              <CareerItem text="Carnegie Mellon University" />
+              <LineItem text="09/23 - Present" gray />
+              <CareerItem text="???" gray />
             </div>
             <div className={styles.fullGap} />
           </div>

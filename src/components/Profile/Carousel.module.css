@@ -1,0 +1,57 @@
+.carousel {
+  position: relative;
+  width: 75%;
+  aspect-ratio: 3 / 2;
+  margin-right: auto;
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+
+.slideshow {
+  display: flex;
+  width: 500%;
+  height: 100%;
+  animation: carousel-animation 20s infinite;
+}
+
+.image {
+  position: relative;
+  width: 20%;
+  height: 100%;
+}
+
+@keyframes carousel-animation {
+  0% {
+    margin-left: 0px;
+  }
+  15% {
+    margin-left: 0px;
+  }
+  20% {
+    margin-left: -100%;
+  }
+  35% {
+    margin-left: -100%;
+  }
+  40% {
+    margin-left: -200%;
+  }
+  55% {
+    margin-left: -200%;
+  }
+  60% {
+    margin-left: -300%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  80% {
+    margin-left: -400%;
+  }
+  95% {
+    margin-left: -400%;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
