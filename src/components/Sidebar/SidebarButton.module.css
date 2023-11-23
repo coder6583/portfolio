@@ -5,7 +5,8 @@
   outline: 0;
   background-color: #0000;
   padding-bottom: 12px;
-  font-family: "Inconsolata";
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
 
 .button:hover {
@@ -70,7 +71,8 @@
   outline: 0;
   background-color: #0000;
   padding-bottom: 12px;
-  font-family: "Inconsolata";
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
 
 .selectedButtonText {
