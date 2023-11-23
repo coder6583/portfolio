@@ -47,7 +47,7 @@ body.dark-theme {
 
   --hero-bg: #1d1d1d;
   --other-bg: #222;
-  --paragraph-color: var(--light-gray);
+  --paragraph-color: var(--very-light-gray);
   --title-color: var(--very-light-gray);
   --scroll-down-color: var(--very-dark-gray);
   --resume-download-color: var(--very-dark-gray);
