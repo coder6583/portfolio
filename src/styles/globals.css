@@ -20,6 +20,7 @@ body {
   --paragraph-color: var(--very-dark-gray);
   --title-color: var(--dark-gray);
   --scroll-down-color: var(--very-light-gray);
+  --resume-download-color: var(--very-light-gray);
   --modal-bg: var(--white);
   --modal-around-bg: var(--transparent-gray);
   --modal-shadow: var(--gray);
@@ -49,6 +50,7 @@ body.dark-theme {
   --paragraph-color: var(--light-gray);
   --title-color: var(--very-light-gray);
   --scroll-down-color: var(--very-dark-gray);
+  --resume-download-color: var(--very-dark-gray);
   --modal-bg: #222;
   --modal-around-bg: var(--transparent-dark-gray);
   --modal-shadow: #222;
