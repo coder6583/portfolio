@@ -11,4 +11,5 @@
   overflow-y: scroll;
   flex: 1;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }

@@ -8,6 +8,7 @@ export default function Sidebar(): JSX.Element {
       <SidebarButton name="HOME" id="home" />
       <SidebarButton name="WORKS" id="works" />
       <SidebarButton name="PROFILE" id="profile" />
+      <SidebarButton name="ABOUT" id="about" />
     </div>
   );
 }

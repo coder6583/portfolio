@@ -8,6 +8,7 @@ import React, {
   SetStateAction,
   createContext,
   useContext,
+  useEffect,
   useState,
 } from "react";
 import Works from "@/components/Works/Works";
@@ -15,9 +16,9 @@ import Profile from "@/components/Profile/Profile";
 import Footer from "@/components/Footer/Footer";
 import About from "@/components/About/About";
 
-export type PageType = "home" | "works" | "profile";
+export type PageType = "home" | "works" | "profile" | "about";
 export const checkPageType = (x: string): x is PageType => {
-  return x === "home" || x === "works" || x === "profile";
+  return x === "home" || x === "works" || x === "profile" || x === "about";
 };
 export type PageContextType = {
   pageId: PageType;
@@ -52,6 +53,42 @@ export const useLightDarkContext = (): LightDarkContextType => {
 export default function Home() {
   const [page, setPage] = useState<PageType>("home");
   const [lightDark, setLightDark] = useState(true);
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const handleScroll = () => {
+    const position = document.getElementById("scroll-content")?.scrollTop;
+    setScrollPosition(position ?? 0);
+  };
+
+  useEffect(() => {
+    const element = document.getElementById("scroll-content");
+    if (element != null) {
+      element.addEventListener("scrollend", handleScroll, { passive: true });
+
+      return () => {
+        element.removeEventListener("scrollend", handleScroll);
+      };
+    }
+  }, []);
+
+  useEffect(() => {
+    console.log(scrollPosition, window.innerHeight);
+    if (0 <= scrollPosition && scrollPosition < 50) {
+      setPage("home");
+    } else if (
+      window.innerHeight - 50 <= scrollPosition &&
+      scrollPosition < window.innerHeight + 50
+    ) {
+      setPage("works");
+    } else if (
+      window.innerHeight * 2 - 50 <= scrollPosition &&
+      scrollPosition < window.innerHeight * 2 + 50
+    ) {
+      setPage("profile");
+    } else if (window.innerHeight * 2 - 50 <= scrollPosition) {
+      setPage("about");
+    }
+  }, [scrollPosition]);
 
   return (
     <>

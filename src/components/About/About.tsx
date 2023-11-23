@@ -5,7 +5,7 @@ import useFirstAppear from "@/features/hooks/useFirstAppear";
 export default function About(): JSX.Element {
   const firstAppear = useFirstAppear(2.2);
   return (
-    <div className={styles.parent}>
+    <div className={styles.parent} id="about">
       {firstAppear && (
         <div className={styles.animation}>
           <div className={styles.avatar}>

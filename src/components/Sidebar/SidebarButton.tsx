@@ -20,6 +20,7 @@ export default function SidebarButton({
       onClick={() => {
         if (checkPageType(id)) {
           setPageId(id);
+          document.getElementById(id)?.scrollIntoView();
         }
       }}
     >
