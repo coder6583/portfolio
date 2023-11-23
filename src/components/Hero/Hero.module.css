@@ -10,7 +10,8 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  font-family: Consolas, Menlo, Arial;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   padding-left: 24px;
 }
 
