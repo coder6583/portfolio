@@ -3,14 +3,14 @@ import styles from "./About.module.css";
 import useFirstAppear from "@/features/hooks/useFirstAppear";
 
 export default function About(): JSX.Element {
-  const firstAppear = useFirstAppear(2);
+  const firstAppear = useFirstAppear(2.2);
   return (
     <div className={styles.parent}>
       {firstAppear && (
         <div className={styles.animation}>
           <div className={styles.avatar}>
             <div className={styles.image}>
-              <Image alt="avatar" src="/images/avatar.PNG" fill={true} />
+              <Image alt="avatar" src="/images/avatar.png" fill={true} />
             </div>
           </div>
           <div className={styles.description}>
