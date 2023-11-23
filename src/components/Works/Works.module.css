@@ -1,7 +1,7 @@
 .parent {
   width: 100vw;
   height: 100vh;
-  background-color: var(--very-very-light-gray);
+  background-color: var(--other-bg);
   padding-top: 7.5vh;
   padding-right: 10vw;
   padding-bottom: 2.5vh;

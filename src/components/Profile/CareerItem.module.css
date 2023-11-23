@@ -1,7 +1,7 @@
 .dot {
   width: 24px;
   height: 24px;
-  background-color: var(--white);
+  background-color: var(--other-bg);
   border: 6px solid var(--blue);
   border-radius: 12px;
 }
@@ -18,7 +18,7 @@
 }
 
 .careerItemText {
-  color: var(--very-dark-gray);
+  color: var(--paragraph-color);
 }
 
 .fullGap {

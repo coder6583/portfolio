@@ -4,7 +4,7 @@
   align-items: middle;
   width: 100vw;
   height: 100vh;
-  background-color: var(--very-very-light-gray);
+  background-color: var(--other-bg);
   padding-top: 5vh;
   padding-right: 10vw;
   padding-bottom: 5vh;
@@ -27,7 +27,7 @@
 
 .profileParagraph {
   flex: 1;
-  color: var(--very-dark-gray);
+  color: var(--paragraph-color);
   line-height: 1.5;
 }
 

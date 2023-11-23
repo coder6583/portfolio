@@ -13,7 +13,7 @@
   font-size: 24px;
   font-family: "Consolas", Arial;
   white-space: nowrap;
-  background-color: var(--white);
+  background-color: var(--hero-bg);
   transition: 0.25s;
 }
 

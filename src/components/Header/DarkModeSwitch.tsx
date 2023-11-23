@@ -18,6 +18,7 @@ export default function DarkModeSwitch(): JSX.Element {
         )}
         onClick={() => {
           setLightDark(!lightDark);
+          document.body.classList.toggle("dark-theme");
         }}
       >
         <div

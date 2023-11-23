@@ -56,13 +56,13 @@
 }
 
 .darkNotch {
-  background-color: var(--very-light-gray);
+  background-color: var(--other-bg);
   transition: 0.25s;
   margin-left: 16px;
 }
 
 .button:hover .darkNotch {
-  background-color: var(--blue);
+  background-color: #000;
 }
 
 .icon {

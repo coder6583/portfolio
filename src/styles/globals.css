@@ -1,4 +1,4 @@
-:root {
+body {
   --white: #fff;
   --very-very-light-gray: #fafafa;
   --very-light-gray: #dddddd;
@@ -7,12 +7,53 @@
   --dark-gray: #555e;
   --very-dark-gray: #333;
   --transparent-gray: #8888;
+  --transparent-dark-gray: #2228;
   --light-transparent-gray: #aaa4;
   --very-light-blue: #88d8;
   --light-blue: #66b;
   --blue: #449;
   --dark-blue: #227;
   --very-dark-blue: #009;
+
+  --hero-bg: var(--white);
+  --other-bg: var(--very-very-light-gray);
+  --paragraph-color: var(--very-dark-gray);
+  --title-color: var(--dark-gray);
+  --scroll-down-color: var(--very-light-gray);
+  --modal-bg: var(--white);
+  --modal-around-bg: var(--transparent-gray);
+  --modal-shadow: var(--gray);
+  --button-border: var(--light-gray);
+  --button-hover-bg: var(--very-light-gray);
+}
+
+body.dark-theme {
+  --white: #fff;
+  --very-very-light-gray: #fafafa;
+  --very-light-gray: #dddddd;
+  --light-gray: #aaaa;
+  --gray: #888c;
+  --dark-gray: #555e;
+  --very-dark-gray: #333;
+  --transparent-gray: #8888;
+  --transparent-dark-gray: #333e;
+  --light-transparent-gray: #aaa4;
+  --very-light-blue: #88d8;
+  --light-blue: #66b;
+  --blue: #fff;
+  --dark-blue: #227;
+  --very-dark-blue: #009;
+
+  --hero-bg: #1d1d1d;
+  --other-bg: #222;
+  --paragraph-color: var(--light-gray);
+  --title-color: var(--very-light-gray);
+  --scroll-down-color: var(--very-dark-gray);
+  --modal-bg: #222;
+  --modal-around-bg: var(--transparent-dark-gray);
+  --modal-shadow: #222;
+  --button-border: var(--very-dark-gray);
+  --button-hover-bg: var(--very-dark-gray);
 }
 
 * {
