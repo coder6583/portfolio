@@ -90,3 +90,24 @@ a {
     color-scheme: dark;
   }
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--other-bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--button-border);
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
