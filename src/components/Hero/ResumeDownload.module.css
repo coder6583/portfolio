@@ -11,7 +11,7 @@
   border-radius: 24px;
   color: var(--blue);
   font-size: 24px;
-  font-family: "Consolas", Arial;
+  font-family: "JetBrains Mono", Arial;
   white-space: nowrap;
   background-color: var(--hero-bg);
   transition: 0.25s;

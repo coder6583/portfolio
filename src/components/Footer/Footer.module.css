@@ -12,6 +12,6 @@
   display: flex;
   align-items: center;
   font-size: 13px;
-  font-family: "Consolas", Arial;
+  font-family: "JetBrains Mono", Arial;
   color: var(--gray);
 }

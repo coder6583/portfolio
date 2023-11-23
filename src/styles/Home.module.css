@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   min-height: 100vh;
-  font-family: "Consolas", Arial;
+  font-family: "JetBrains Mono", Arial;
 }
 
 .content {
