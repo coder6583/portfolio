@@ -16,7 +16,13 @@ export default function Hero(): JSX.Element {
             afterDelay={100}
             text="SOMA NARITA"
             align="center"
-            fontSize={54}
+            fontSize={
+              typeof window !== "undefined"
+                ? window.innerWidth < 300
+                  ? 54
+                  : 42
+                : 54
+            }
             color="var(--blue)"
           />
         </div>

@@ -93,3 +93,13 @@
     transform: translateY(0px);
   }
 }
+
+@media (max-width: 300px) {
+  .nameText {
+    font-size: 24px;
+  }
+
+  .nameParent {
+    padding-left: 4px;
+  }
+}
