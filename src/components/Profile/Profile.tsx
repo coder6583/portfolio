@@ -7,7 +7,7 @@ import LineItem from "./LineItem";
 export default function Profile(): JSX.Element {
   const firstAppear = useFirstAppear(5 / 4);
   return (
-    <div className={styles.parent}>
+    <div className={styles.parent} id="profile">
       {firstAppear && (
         <div className={styles.animation}>
           <div className={styles.left}>

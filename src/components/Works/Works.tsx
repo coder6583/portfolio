@@ -8,7 +8,7 @@ import useFirstAppear from "@/features/hooks/useFirstAppear";
 export default function Works(): JSX.Element {
   const firstAppear = useFirstAppear(1 / 2);
   return (
-    <div className={styles.parent}>
+    <div className={styles.parent} id="works">
       {firstAppear && (
         <div className={styles.projects}>
           <div className={styles.row}>

@@ -69,14 +69,14 @@ export default function Home() {
           <Header />
           <main className={`${styles.main}`}>
             <Sidebar />
-            <div className={styles.content}>
+            <div className={styles.content} id="scroll-content">
               <Hero />
               <Works />
               <Profile />
               <About />
+              <Footer />
             </div>
           </main>
-          <Footer />
         </lightDarkContext.Provider>
       </pageContext.Provider>
     </>

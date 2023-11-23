@@ -5,7 +5,7 @@ import ResumeDownload from "./ResumeDownload";
 
 export default function Hero(): JSX.Element {
   return (
-    <div className={styles.heroParent}>
+    <div className={styles.heroParent} id="hero">
       <div className={styles.nameParent}>
         <div className={styles.nameText}>
           <div style={{ flex: 1 }} />

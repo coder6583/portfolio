@@ -1,6 +1,7 @@
 .main {
   display: flex;
   flex-direction: row;
+  overflow-y: hidden;
   min-height: 100vh;
   font-family: "JetBrains Mono", Arial;
 }
