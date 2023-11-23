@@ -10,7 +10,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  font-family: Inconsolata, Arial;
+  font-family: Consolas, Menlo, Arial;
   padding-left: 24px;
 }
 
@@ -18,7 +18,6 @@
   flex: 3.5;
   display: flex;
   flex-direction: column;
-  font-weight: 400;
 }
 
 .subtitleText {
