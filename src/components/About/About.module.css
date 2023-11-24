@@ -110,7 +110,7 @@
 
 @media (max-width: 900px) {
   .parent {
-    height: 60vh;
+    height: auto;
     padding-left: 15vw;
     padding-right: 10vw;
   }
