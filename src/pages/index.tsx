@@ -84,7 +84,6 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    console.log(scrollPosition, window.innerHeight);
     if (0 <= scrollPosition && scrollPosition < 50) {
       setPage("home");
     } else if (
