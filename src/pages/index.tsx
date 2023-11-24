@@ -128,10 +128,10 @@ export default function Home() {
             />
             <link rel="icon" href="/favicon.ico" />
           </Head>
-          <Header />
           <main className={`${styles.main}`}>
             <Sidebar />
             <div className={styles.content} id="scroll-content">
+              <Header />
               <Hero />
               <Works />
               <Profile />
