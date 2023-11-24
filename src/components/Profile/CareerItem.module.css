@@ -35,7 +35,7 @@
   margin-left: 3px;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 450px) {
   .dot {
     width: 18px;
     height: 18px;
@@ -45,6 +45,29 @@
   .careerItemText {
     white-space: nowrap;
     font-size: 12px;
+  }
+
+  .careerItemGap {
+    width: 12px;
+  }
+
+  .graydot {
+    width: 14px;
+    height: 14px;
+    margin-left: 2px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dot {
+    width: 20px;
+    height: 20px;
+    border: 5px solid var(--blue);
+  }
+
+  .careerItemText {
+    white-space: nowrap;
+    font-size: 14px;
   }
 
   .careerItemGap {

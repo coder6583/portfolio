@@ -65,43 +65,87 @@
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 450px) {
   .parent {
     height: 100vh;
     padding-left: 7.5vw;
     padding-right: 7.5vw;
   }
   .animation {
+    height: 100%;
     flex-direction: column;
+    justify-content: center;
   }
   .description {
     margin: 0;
   }
   .avatar {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 8px;
   }
   .image {
-    width: 70px;
-    height: 70px;
-    margin: 15px;
+    width: 90px;
+    height: 90px;
+    margin: 20px;
   }
   .name {
     display: flex;
     justify-content: center;
   }
   .description {
-    font-size: 12px;
+    font-size: 14px;
   }
   .contact {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .career {
     display: block;
     margin-top: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .parent {
+    height: 60vh;
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+  }
+  .animation {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .description {
+    margin: 0;
+  }
+  .avatar {
+    width: 130px;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+  }
+  .image {
+    width: 90px;
+    height: 90px;
+    margin: 20px;
+  }
+  .name {
+    display: flex;
+    justify-content: center;
+  }
+  .description {
+    font-size: 14px;
+  }
+  .contact {
+    font-size: 14px;
+  }
+
+  .career {
+    display: none;
   }
 }

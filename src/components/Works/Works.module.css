@@ -105,7 +105,53 @@
   background-color: var(--blue);
 }
 
-@media (max-width: 300px) {
+.desktop {
+  display: block;
+  height: 100%;
+}
+.medium {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .parent {
+    scroll-snap-align: none;
+    height: auto;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  .page {
+    scroll-snap-align: start;
+    height: 100vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+
+  .row {
+    scroll-snap-align: none;
+    flex-direction: row;
+    height: 40vh;
+    align-items: center;
+  }
+
+  .child {
+    width: 45%;
+    height: 25%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .desktop {
+    display: none;
+  }
+  .medium {
+    display: block;
+    height: min-content;
+  }
+}
+
+@media (max-width: 450px) {
   .parent {
     scroll-snap-align: none;
     height: auto;
@@ -124,5 +170,12 @@
     height: 25%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .desktop {
+    display: block;
+  }
+  .medium {
+    display: none;
   }
 }

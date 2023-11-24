@@ -32,7 +32,13 @@
     DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 450px) {
+  .parent {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
   .parent {
     display: none;
   }

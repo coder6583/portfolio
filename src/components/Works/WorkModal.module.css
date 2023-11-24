@@ -185,7 +185,7 @@
   display: block;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 450px) {
   .parent {
     padding: 5vh 7.5vw;
   }
