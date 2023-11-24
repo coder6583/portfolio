@@ -101,3 +101,9 @@
 .button:hover .sunIcon {
   color: var(--white);
 }
+
+@media (max-width: 900px) {
+  .buttonParent {
+    margin-right: 8px;
+  }
+}

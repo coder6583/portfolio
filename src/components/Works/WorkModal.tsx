@@ -43,7 +43,13 @@ export default function WorkModal({
           </div>
         </div>
         <div className={styles.content}>
-          <div className={styles.responsiveTitle}>
+          <div className={styles.left}>
+            <div className={styles.image}>
+              <Image alt="thumbnail" src={item.thumbnail} fill />
+            </div>
+          </div>
+          <div className={styles.right}>
+            <div className={styles.midGap} style={{ flex: 1.5 }} />
             <div className={styles.title}>{item.name}</div>
             <div className={styles.subdescription}>
               <div className={styles.categories}>
@@ -51,25 +57,6 @@ export default function WorkModal({
               </div>
               <div className={styles.techstack}>
                 Technology Used: {item.techstack.join(", ")}
-              </div>
-            </div>
-          </div>
-          <div className={styles.left}>
-            <div className={styles.image}>
-              <Image alt="thumbnail" src={item.thumbnail} fill />
-            </div>
-          </div>
-          <div className={styles.right}>
-            <div style={{ flex: 1.5 }} />
-            <div className={styles.desktopTitle}>
-              <div className={styles.title}>{item.name}</div>
-              <div className={styles.subdescription}>
-                <div className={styles.categories}>
-                  Categories: {item.categories.join(", ")}
-                </div>
-                <div className={styles.techstack}>
-                  Technology Used: {item.techstack.join(", ")}
-                </div>
               </div>
             </div>
             <div className={styles.description}>{item.description}</div>
@@ -97,7 +84,7 @@ export default function WorkModal({
                 )}
               </div>
             )}
-            <div style={{ flex: 1.5 }} />
+            <div className={styles.midGap} style={{ flex: 1.5 }} />
           </div>
         </div>
       </div>

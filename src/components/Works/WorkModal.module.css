@@ -185,7 +185,11 @@
   display: block;
 }
 
-@media (max-width: 450px) {
+.midGap {
+  display: block;
+}
+
+@media (max-width: 900px) {
   .parent {
     padding: 5vh 7.5vw;
   }
@@ -198,8 +202,14 @@
   }
   .left {
     width: 100%;
+    margin-top: 32px;
+    height: auto;
+  }
+  .image {
+    width: 100%;
   }
   .right {
+    height: 100%;
     width: 100%;
   }
 
@@ -213,6 +223,9 @@
   .description {
     font-size: 12px;
   }
+  .subdescription {
+    margin-bottom: 8px;
+  }
   .categories {
     font-size: 12px;
   }
@@ -220,6 +233,9 @@
     font-size: 12px;
   }
 
+  .linkParent {
+    flex: 1;
+  }
   .websitelink {
     font-size: 12px;
     margin-top: 8px;
@@ -231,8 +247,32 @@
 
   .content {
     padding-bottom: 16px;
+    flex-direction: column;
   }
   .image {
     margin-bottom: 8px;
+  }
+  .gap {
+    display: none;
+  }
+  .fullGap {
+    display: none;
+  }
+  .midGap {
+    display: none;
+  }
+  .title {
+    flex: none;
+  }
+  .subdescription {
+    flex: none;
+  }
+  .description {
+    flex: none;
+  }
+  .linkParent {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 32px;
   }
 }
