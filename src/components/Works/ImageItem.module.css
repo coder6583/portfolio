@@ -9,6 +9,28 @@
   cursor: pointer;
 }
 
-.caption {
+.captionDesktop {
   margin-top: 4px;
+  display: block;
+}
+
+.captionMobile {
+  margin-top: 8px;
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .captionDesktop {
+    display: none;
+  }
+
+  .captionMobile {
+    display: block;
+  }
+
+  .caption {
+    color: #aaa;
+    font-size: 24px;
+    text-align: center;
+  }
 }

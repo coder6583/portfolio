@@ -13,3 +13,9 @@
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
+
+@media (max-width: 900px) {
+  .content {
+    scroll-snap-type: none;
+  }
+}

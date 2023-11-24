@@ -31,24 +31,19 @@ export default function Works(): JSX.Element {
               </div>
             </div>
           </div>
-          <div className={styles.medium}>
-            <div className={styles.page}>
-              <div className={styles.row}>
-                <div className={clsx(styles.child, styles.child1)}>
-                  <ImageItem id="laze" />
-                </div>
-                <div className={clsx(styles.child, styles.child2)}>
-                  <ImageItem id="charEngine3D" />
-                </div>
-              </div>
-              <div className={styles.row}>
-                <div className={clsx(styles.child, styles.child3)}>
-                  <ImageItem id="engine3D" />
-                </div>
-                <div className={clsx(styles.child, styles.child4)}>
-                  <ImageItem id="textEditor" />
-                </div>
-              </div>
+          <div className={styles.mobile}>
+            <div className={styles.worksHeader}>Works</div>
+            <div className={clsx(styles.child)}>
+              <ImageItem id="laze" />
+            </div>
+            <div className={clsx(styles.child)}>
+              <ImageItem id="charEngine3D" />
+            </div>
+            <div className={clsx(styles.child)}>
+              <ImageItem id="engine3D" />
+            </div>
+            <div className={clsx(styles.child)}>
+              <ImageItem id="textEditor" />
             </div>
           </div>
         </>
