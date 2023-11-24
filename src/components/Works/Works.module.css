@@ -104,3 +104,25 @@
   aspect-ratio: calc(16 / 9);
   background-color: var(--blue);
 }
+
+@media (max-width: 300px) {
+  .parent {
+    scroll-snap-align: none;
+    height: auto;
+  }
+
+  .row {
+    scroll-snap-align: start;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 64px;
+    padding-bottom: 32px;
+  }
+
+  .child {
+    width: 80%;
+    height: 25%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

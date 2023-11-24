@@ -176,3 +176,63 @@
   align-items: center;
   flex: 1;
 }
+
+.responsiveTitle {
+  display: none;
+}
+
+.desktopTitle {
+  display: block;
+}
+
+@media (max-width: 300px) {
+  .parent {
+    padding: 5vh 7.5vw;
+  }
+  .modal {
+    width: 85vw;
+    height: 90vh;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+
+  .responsiveTitle {
+    display: block;
+    margin-bottom: 16px;
+  }
+  .desktopTitle {
+    display: none;
+  }
+  .description {
+    font-size: 12px;
+  }
+  .categories {
+    font-size: 12px;
+  }
+  .techstack {
+    font-size: 12px;
+  }
+
+  .websitelink {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+  .githublink {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  .content {
+    padding-bottom: 16px;
+  }
+  .image {
+    margin-bottom: 8px;
+  }
+}

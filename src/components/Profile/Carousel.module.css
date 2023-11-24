@@ -55,3 +55,12 @@
     margin-left: 0px;
   }
 }
+
+@media (max-width: 300px) {
+  .carousel {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}

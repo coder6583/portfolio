@@ -34,3 +34,26 @@
   margin-right: 5px;
   margin-left: 3px;
 }
+
+@media (max-width: 300px) {
+  .dot {
+    width: 18px;
+    height: 18px;
+    border: 5px solid var(--blue);
+  }
+
+  .careerItemText {
+    white-space: nowrap;
+    font-size: 12px;
+  }
+
+  .careerItemGap {
+    width: 12px;
+  }
+
+  .graydot {
+    width: 14px;
+    height: 14px;
+    margin-left: 2px;
+  }
+}

@@ -61,3 +61,37 @@
     transform: translateY(0px);
   }
 }
+
+@media (max-width: 300px) {
+  .parent {
+    padding-right: 7.5vw;
+    padding-left: 7.5vw;
+  }
+  .animation {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .left {
+    width: 100%;
+    flex-direction: row;
+  }
+  .right {
+    height: min-content;
+  }
+  .fullGap {
+    display: none;
+  }
+  .gap {
+    display: none;
+  }
+  .profileParagraph {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .career {
+    display: none;
+  }
+}
