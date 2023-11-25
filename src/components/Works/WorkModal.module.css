@@ -19,13 +19,12 @@
 }
 
 .modal {
-  position: absolute;
   display: flex;
   flex-direction: column;
-  top: 10%;
-  right: 10%;
-  bottom: 10%;
-  left: 10%;
+  margin-top: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  margin-left: 10%;
   width: 80%;
   height: 80%;
   background-color: var(--modal-bg);
@@ -194,11 +193,14 @@
 }
 
 @media (max-width: 900px) {
+  .parent {
+    height: -webkit-fill-available;
+  }
   .modal {
-    top: 5%;
-    right: 7.5%;
-    bottom: 5%;
-    left: 7.5%;
+    margin-top: 5%;
+    margin-right: 7.5%;
+    margin-bottom: 5%;
+    margin-left: 7.5%;
     width: 85%;
     height: 90%;
   }
