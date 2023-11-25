@@ -2,8 +2,14 @@ import { BsChevronCompactDown } from "react-icons/bs";
 import Typewriter from "../Typewriter/Typewriter";
 import styles from "./Hero.module.css";
 import ResumeDownload from "./ResumeDownload";
+import { useEffect } from "react";
 
 export default function Hero(): JSX.Element {
+  useEffect(() => {
+    console.log(
+      typeof window !== "undefined" ? (window.innerWidth < 450 ? 42 : 54) : 54
+    );
+  });
   return (
     <div className={styles.heroParent} id="home">
       <div className={styles.nameParent}>
@@ -18,9 +24,9 @@ export default function Hero(): JSX.Element {
             align="center"
             fontSize={
               typeof window !== "undefined"
-                ? window.innerWidth < 300
-                  ? 54
-                  : 42
+                ? window.innerWidth < 450
+                  ? 42
+                  : 54
                 : 54
             }
             color="var(--blue)"

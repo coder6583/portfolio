@@ -103,3 +103,9 @@
     padding-left: 4px;
   }
 }
+
+@media (max-width: 900px) {
+  .heroParent {
+    height: -webkit-fill-available;
+  }
+}
