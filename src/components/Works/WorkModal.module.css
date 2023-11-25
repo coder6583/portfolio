@@ -197,6 +197,7 @@
     height: -webkit-fill-available;
   }
   .modal {
+    overflow-y: scroll;
     margin-top: 7.5%;
     margin-right: 7.5%;
     margin-bottom: 7.5%;
