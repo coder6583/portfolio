@@ -5,11 +5,6 @@ import ResumeDownload from "./ResumeDownload";
 import { useEffect } from "react";
 
 export default function Hero(): JSX.Element {
-  useEffect(() => {
-    console.log(
-      typeof window !== "undefined" ? (window.innerWidth < 450 ? 42 : 54) : 54
-    );
-  });
   return (
     <div className={styles.heroParent} id="home">
       <div className={styles.nameParent}>
